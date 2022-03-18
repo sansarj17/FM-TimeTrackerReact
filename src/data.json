@@ -1,0 +1,116 @@
+[
+  {
+    "key": 1,
+    "title": "work",
+    "imgSrc": "./images/icon-work.svg",
+    "timeframes": [
+      {
+        "current": 5,
+        "previous": 7
+      },
+      {
+        "current": 32,
+        "previous": 36
+      },
+      {
+        "current": 103,
+        "previous": 128
+      }
+    ]
+  },
+  {
+    "key": 2,
+    "title": "play",
+    "imgSrc": "./images/icon-play.svg",
+    "timeframes": [
+      {
+        "current": 1,
+        "previous": 2
+      },
+      {
+        "current": 10,
+        "previous": 8
+      },
+      {
+        "current": 23,
+        "previous": 29
+      }
+    ]
+  },
+  {
+    "key": 3,
+    "title": "study",
+    "imgSrc": "./images/icon-study.svg",
+    "timeframes": [
+      {
+        "current": 0,
+        "previous": 1
+      },
+      {
+        "current": 4,
+        "previous": 7
+      },
+      {
+        "current": 13,
+        "previous": 19
+      }
+    ]
+  },
+  {
+    "key": 4,
+    "title": "exercise",
+    "imgSrc": "./images/icon-exercise.svg",
+    "timeframes": [
+      {
+        "current": 1,
+        "previous": 1
+      },
+      {
+        "current": 4,
+        "previous": 5
+      },
+      {
+        "current": 11,
+        "previous": 18
+      }
+    ]
+  },
+  {
+    "key": 5,
+    "title": "social",
+    "imgSrc": "./images/icon-social.svg",
+    "timeframes": [
+      {
+        "current": 1,
+        "previous": 3
+      },
+      {
+        "current": 5,
+        "previous": 10
+      },
+      {
+        "current": 21,
+        "previous": 23
+      }
+    ]
+  },
+  {
+    "key": 6,
+    "title": "self",
+    "imgSrc": "./images/icon-self-care.svg",
+    "timeframes": [
+      {
+        "current": 0,
+        "previous": 1
+      },
+      {
+        "current": 2,
+        "previous": 2
+      },
+      {
+        "current": 7,
+        "previous": 11
+      }
+    ]
+  }
+]

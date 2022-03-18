@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import Profile from "./components/Profile";
+import SubSection from "./components/SubSection";
+import Data from "./data.json";
+import "./styles.css";
 
-function App() {
+export default function App() {
+  const [view, setView] = useState(0);
+  const [viewType, setViewType] = useState("Day");
+
+  function viewTo(value) {
+    setView(value);
+  }
+
+  useEffect(() => {
+    if (view === "0") {
+      setViewType("Day");
+    } else if (view === "1") {
+      setViewType("Week");
+    } else if (view === "2") {
+      setViewType("Month");
+    }
+  }, [view, viewType]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <div className="container">
+          <Profile viewTo={viewTo} view={view} />
+          {Data.map((section) => (
+            <SubSection
+              key={section.key}
+              title={section.title}
+              imgSrc={section.imgSrc}
+              timeVal={section.timeframes[view]}
+              viewType={viewType}
+            />
+          ))}
+        </div>
+      </main>
     </div>
   );
 }
-
-export default App;
